@@ -18,9 +18,9 @@ function resetForm() {
 $(document).ready(function(){
   $('#upload').click(function(event) {
     event.preventDefault();
-    if (($("#album-title").val() === "") || ($("#artist").val() === "") || ($("#year").val() === "") || ($("#image").val() === "")) {
-       alert('you did not fill out one of the fields');
-       return false;
+    $('#formie input').each(function(){
+      if (!$(this).val()) {
+        $(this).addClass('invalid');
    } else {
       var title = $('#album-title').val();
       var artist = $('#artist').val();
@@ -38,9 +38,9 @@ $(document).ready(function(){
                                   '<div class="card-reveal">' +
                                     '<span class="card-title grey-text text-darken-4">' + albumItem.title + '<i class="material-icons right">close</i></span>' +
                                     '<p>This album was released in ' + albumItem.year + '</p>' +
-                                  '</div>'
-      );
+                                  '</div>');
       resetForm();
-    };
+      }
+    });
   });
 });
