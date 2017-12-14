@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/bin/materialize.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 
     <title>Album Art</title>
@@ -16,33 +18,45 @@
           <form class="col s12">
             <div class="row">
               <div class="input-field col s12">
-                <input placeholder="Placeholder" id="album_name" type="text" class="validate">
+                <input id="album-title" placeholder="A Deeper Understanding"  type="text" class="validate">
                 <label for="album_name" class="active">Album Name</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <input id="artist" placeholder="Placeholder" type="text" class="validate">
+                <input id="artist" placeholder="War on Drugs" type="text" class="validate">
                 <label for="artist" class="active">Artist Name</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <input id="year" placeholder="Placeholder" type="text" class="validate">
+                <input id="year" placeholder="2014" type="text" class="validate">
                 <label for="year" class="active">Album Year</label>
               </div>
             </div>
-            <div class="file-field input-field">
-              <div class="btn">
-                <span>Image</span>
-                <input type="file">
-              </div>
-              <div class="file-path-wrapper">
-                <input class="file-path validate" type="text">
+            <div class="row">
+              <div class="col s12 input-field">
+                <input id="image" placeholder="https://images.unsplash.com/photo-15009%3D" type="text" class="validate">
+                <label for="image" class="active">Image URL</label>
               </div>
             </div>
+            <button id="upload" class="btn" type="button" name="button">Submit</button>
           </form>
         </div>
+      </div>
+      <div class="gallery-area">
+        <!-- <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="https://images.unsplash.com/photo-1500964757637-c85e8a162699?auto=format&fit=crop&w=1078&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div> -->
       </div>
     </div>
   </body>
