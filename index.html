@@ -7,9 +7,43 @@
     <script type="text/javascript" src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/main.css">
 
-    <title></title>
+    <title>Album Art</title>
   </head>
   <body>
-
+    <div class="container">
+      <div class="form-area">
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Placeholder" id="album_name" type="text" class="validate">
+                <label for="album_name" class="active">Album Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="artist" placeholder="Placeholder" type="text" class="validate">
+                <label for="artist" class="active">Artist Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="year" placeholder="Placeholder" type="text" class="validate">
+                <label for="year" class="active">Album Year</label>
+              </div>
+            </div>
+            <div class="file-field input-field">
+              <div class="btn">
+                <span>Image</span>
+                <input type="file">
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
