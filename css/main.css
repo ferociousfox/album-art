@@ -7298,6 +7298,8 @@ body {
   /* 3 */
   padding-right: 20px;
   /* 3 */
+  padding-top: 300px;
+  /* 3 */
   width: 60%;
   /* 1 */ }
 
@@ -7328,7 +7330,51 @@ body {
   position: absolute;
   width: 1px; }
 
+.top {
+  height: 200px;
+  width: 100%;
+  margin-top: 0;
+  color: white;
+  background-image: url("https://images.unsplash.com/photo-1500964757637-c85e8a162699?auto=format&fit=crop&w=1078&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+  position: fixed;
+  z-index: 1;
+  text-transform: uppercase;
+  font-size: 36px; }
+  .top span {
+    animation: colorBlock 30s ease-in infinite; }
+  .top nav {
+    background-color: transparent; }
+    .top nav ul li a:hover {
+      color: magenta;
+      text-decoration: none; }
+
+@keyframes colorBlock {
+  0% {
+    color: red; }
+  12% {
+    color: orange; }
+  25% {
+    color: #fff846; }
+  37% {
+    color: green; }
+  50% {
+    color: darkgreen; }
+  62% {
+    color: teal; }
+  75% {
+    color: magenta; }
+  87% {
+    color: purple; }
+  100% {
+    color: red; } }
+.card {
+  cursor: pointer;
+  transition: 1s ease-in; }
+
+.card:hover {
+  transform: scale(1.1); }
+
 .form-area {
-  margin-top: 10vh; }
+  transition: 1s ease-out; }
 
 /*# sourceMappingURL=main.css.map */
